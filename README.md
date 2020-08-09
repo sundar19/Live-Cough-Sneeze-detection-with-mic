@@ -20,3 +20,4 @@ Libraries required:
 4.numpy
 and also you require a microphone!!!
 
+NOTE: Specify the paths correctly as mentioned in the program for proper accessing of required file by the program
