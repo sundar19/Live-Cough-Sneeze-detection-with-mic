@@ -41,7 +41,7 @@ for x in itertools.repeat(1):
     except:
         pass
     if (db > 74):
-        os.system('python D:/Python36/rec_2_detect.py') #specify path where rec_2_detect.py is stored in your system
+        os.system('python D:/Python36/rec_2_detect.py') # specify path where rec_2_detect.py is stored in your system
 
 
 stream.stop_stream()
