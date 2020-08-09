@@ -13,7 +13,7 @@ CHANNELS = 2
 RATE = 44100
 CHUNK = 1024
 RECORD_SECONDS = 6
-WAVE_OUTPUT_FILENAME = "D:/Python36/Sound_datatest/file.wav" #path where you want to save your recorded sound file
+WAVE_OUTPUT_FILENAME = "D:/Python36/Sound_datatest/file.wav" # path where you want to save your recorded sound file
 
 
 def spec_to_image(spec, eps=1e-6):
