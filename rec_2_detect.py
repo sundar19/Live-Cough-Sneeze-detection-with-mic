@@ -13,7 +13,7 @@ CHANNELS = 2
 RATE = 44100
 CHUNK = 1024
 RECORD_SECONDS = 6
-WAVE_OUTPUT_FILENAME = "D:/Python36/Sound_datatest/file.wav"
+WAVE_OUTPUT_FILENAME = "D:/Python36/Sound_datatest/file.wav" #path where you want to save your recorded sound file
 
 
 def spec_to_image(spec, eps=1e-6):
@@ -75,14 +75,14 @@ device=torch.device('cuda:0')
 
 
 
-with open('D:/Python36/model_import/indtocat.pkl','rb') as f:
+with open('D:/Python36/model_import/indtocat.pkl','rb') as f: # specify path to pickle file
   indtocat = pickle.load(f)
 
-resnet_model = torch.load("D:/Python36/model_import/esc50resnet.pth")
+resnet_model = torch.load("D:/Python36/model_import/esc50resnet.pth") # specify path to saved pytorch model file
 
 
 
-filename='D:/Python36/Sound_datatest/file.wav'
+filename='D:/Python36/Sound_datatest/file.wav' # path to retrieve previously recorded and saved sound file 
 spec=spec_to_image(get_melspectrogram_db(filename))
 spec_t=torch.tensor(spec).to(device, dtype=torch.float32)
 pr=resnet_model.forward(spec_t.reshape(1,1,*spec_t.shape))
