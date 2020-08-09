@@ -1,4 +1,6 @@
 # Live-Cough-Sneeze-detection-with-mic
+Watch a live demo of this project https://drive.google.com/file/d/1bax30KmnOahCLjbw7z3pqwct8suVJelR/view
+
 This repository aims at detecting live cough/sneeze with mic . It also detects all other sounds included in ESC-50 dataset
 
 Thanks  https://github.com/hasithsura/Environmental-Sound-Classification and https://github.com/karolpiczak/ESC-50
