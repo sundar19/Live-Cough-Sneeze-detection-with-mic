@@ -16,7 +16,7 @@ To use this program ,
 2. After some seconds rec_2_detect.py starts running and detects whether its a cough/sneeze or something else. (NOTE: The project is not 100% accurate and is fairly slow and need to be optimized for quicker detection and inference)
 
 Libraries required:
-1.Pytorch
+1.Pytorch (1.4.0+cu92)
 2.Librosa
 3.pyaudio
 4.numpy
